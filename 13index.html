@@ -130,6 +130,14 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
         justify-content: center;
         gap: 5px; /* Расстояние между молнией и текстом */
     }
+		@media screen and (max-width: 768px) {
+    #ui-bar {
+        display: none !important; /* Полностью скрываем черную панель */
+    }
+    #story {
+        margin-left: 0 !important; /* Убираем отступ слева, чтобы игра заняла весь экран */
+    }
+}
     .header p {
         font-size: 0.85rem; 
     }
