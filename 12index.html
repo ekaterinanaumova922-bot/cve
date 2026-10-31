@@ -120,7 +120,20 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
         .container { max-width: 1300px; margin: 0 auto; padding: 20px; }
         .header { text-align: center; padding: 30px 20px; border-bottom: 2px solid #00ccff; margin-bottom: 40px; }
         .header h1 { font-size: 3rem; letter-spacing: 4px; text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff; animation: glow 2s ease-in-out infinite alternate; }
-        @keyframes glow {
+        @media screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px; 
+        word-wrap: break-word; 
+    }
+    .header p {
+        font-size: 0.9rem; 
+    }
+    .container {
+        padding: 10px; 
+    }
+}
+		@keyframes glow {
             from { text-shadow: 0 0 5px #00ccff; }
             to { text-shadow: 0 0 20px #00ccff, 0 0 30px #66ddff; }
         }
